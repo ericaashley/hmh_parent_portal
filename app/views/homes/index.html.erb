@@ -1,4 +1,14 @@
-<p>
-  Modify me in `app/views/homes/index.html.erb` or change the root directive in
-  `config/routes.rb`
-</p>
+<div class="row">
+  <div class="small-12 columns center_text top-text">
+      <%= Time.now.strftime("%B %d") %> <i class="fi-calendar"></i>
+  </div>
+  <% @sessions = [{title: "this class"}, {title: "this other class"}]%>
+  <%- @sessions.each do |session| %>
+    <div class="small-12 columns top-text">
+      <div class="button expand">
+        <%= session %>
+      </div>
+    </div>
+  <!-- <a href="#" class="button"></a> -->
+  <%- end %>
+</div>
