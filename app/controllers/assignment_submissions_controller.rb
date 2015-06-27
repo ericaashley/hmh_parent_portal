@@ -1,0 +1,3 @@
+class AssignmentSubmissionsController < ApplicationController
+
+end

@@ -1,0 +1,3 @@
+class StaffSectionsAssociationsController < ApplicationController
+
+end
