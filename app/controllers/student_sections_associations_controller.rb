@@ -1,0 +1,3 @@
+class StudentSectionsAssociationsController < ApplicationController
+
+end
