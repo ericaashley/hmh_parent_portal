@@ -63,8 +63,22 @@ def seed_staff_sections
     section_association = StaffSectionAssociation.find_or_initialize_by(
       ref_id: element['refId']
     )
-    section_association.section_id = Section.find_by(ref_id: element["sectionRefId"])
-    section_association.staff_person_id = StaffPerson.find_by(ref_id: element["staffPersonRefId"])
+
+    # not all staff/section associations from the API have a staff ID.
+    if element["sectionRefId"].nil?
+      section_id = rand(1..Section.count)
+    else
+      section_id = Section.find_by(ref_id: element["sectionRefId"]).id
+    end
+
+    if element["staffPersonRefId"].nil?
+      staff_person_id = rand(1..StaffPerson.count)
+    else
+      staff_person_id = StaffPerson.find_by(ref_id: element["staffPersonRefId"]).id
+    end
+
+    section_association.section_id = section_id
+    section_association.staff_person_id = staff_person_id
     section_association.start_date = element["startDate"]
     section_association.end_date = element["endDate"]
     if section_association.save
