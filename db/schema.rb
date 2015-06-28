@@ -17,27 +17,80 @@ ActiveRecord::Schema.define(version: 20150627220406) do
   enable_extension "plpgsql"
 
   create_table "assignment_submissions", force: :cascade do |t|
+    t.integer "student_id",        null: false
+    t.integer "assignment_id",     null: false
+    t.string  "ref_id",            null: false
+    t.string  "student_ref_id"
+    t.string  "assignment_ref_id"
+    t.decimal "score"
+    t.string  "status"
   end
 
   create_table "assignments", force: :cascade do |t|
+    t.jsonb    "students"
+    t.string   "section_ref_id",  null: false
+    t.integer  "section_id"
+    t.string   "status"
+    t.string   "description"
+    t.string   "name"
+    t.string   "ref_id"
+    t.string   "creator_ref_id"
+    t.integer  "staff_person_id"
+    t.datetime "available_date"
+    t.datetime "due_date"
   end
 
   create_table "parents", force: :cascade do |t|
+    t.string "user_name",     null: false
+    t.string "given_name",    null: false
+    t.string "family_name",   null: false
+    t.string "phone_number"
+    t.string "email_address"
   end
 
   create_table "sections", force: :cascade do |t|
+    t.string "status",      null: false
+    t.string "school_year", null: false
+    t.string "ref_id",      null: false
+    t.string "name",        null: false
   end
 
   create_table "staff_people", force: :cascade do |t|
+    t.string "user_name"
+    t.string "ref_id"
+    t.string "id_value"
+    t.string "given_name"
+    t.string "family_name"
+    t.string "phone_number"
+    t.string "email_address"
   end
 
   create_table "staff_section_associations", force: :cascade do |t|
+    t.integer  "staff_person_id"
+    t.integer  "section_id"
+    t.string   "ref_id",          null: false
+    t.datetime "start_date"
+    t.datetime "end_date"
   end
 
   create_table "student_section_associations", force: :cascade do |t|
+    t.integer "student_id",     null: false
+    t.integer "section_id",     null: false
+    t.string  "ref_id",         null: false
+    t.string  "student_ref_id"
+    t.string  "section_ref_id"
+    t.string  "school_year"
+    t.string  "exit_date"
   end
 
   create_table "students", force: :cascade do |t|
+    t.string  "ref_id",        null: false
+    t.string  "id_value",      null: false
+    t.string  "given_name",    null: false
+    t.string  "family_name",   null: false
+    t.string  "phone_number"
+    t.string  "email_address"
+    t.integer "parent_id"
   end
 
   create_table "users", force: :cascade do |t|
@@ -51,6 +104,7 @@ ActiveRecord::Schema.define(version: 20150627220406) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "role",                                null: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
