@@ -21,7 +21,10 @@
   font-family: "Georgia", serif;
   font-size: 35px;
 }
-
+.panel {
+  background-color: #FAFAFA;
+  padding-bottom: 90px;
+}
 .name span a {
   color: #2A7CA8;
 }
@@ -30,9 +33,13 @@
   font-size: 120px;
   text-align: center;
 }
+.center_text {
+  padding-top: 22px;
+}
 .top-text{
-  color: #A1BCCC;
+  color: #FFF;
   font-size: 35px;
+  font-family: 'Montserrat', sans-serif;
 }
 .center_text{
   text-align: center;
@@ -54,6 +61,8 @@
   background-color: #00C569;
   padding-left: 20px;
 }
+
+
 .column_content {
   padding-top: 7px;
   padding-bottom: 7px;
@@ -87,7 +96,6 @@ body {
 }
 .landing_page{
   height: 60%;
-  padding-bottom: 100px;
   background-image: url("student.jpg");
   background-repeat: no-repeat;
   background-size: cover;
