@@ -1,11 +1,11 @@
 <div class="row">
   <div class="small-12 columns center_text top-text">
-      <%= Time.now.strftime("%B %d") %> <i class="fi-calendar"></i>
+      <%= @section.name %> <i class="fi-calendar"></i>
   </div>
-  <%- @sections.each do |section| %>
+  <%- @students.each do |student| %>
     <div class="small-12 columns top-text">
       <div class="button expand">
-        <%= link_to section.name, section_students_path(section) %>
+        <%= link_to student.full_name, student_path(student) %>
       </div>
     </div>
   <!-- <a href="#" class="button"></a> -->
