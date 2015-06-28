@@ -1,4 +1,16 @@
 <div class="landing_page">
+  <div class="row">
+    <div class="small-5 columns">
+      <div class="white_text main_button ">
+       <h2> Bridging the gap between teachers and parents</h2>
+        <% if current_user.role == "teacher" %>
+          <%= button_to 'My classes', sections_path, class:"button large"%>
+        <% else %>
+          <%= button_to 'My child', sections_path, class:"button large"%>
+        <% end %>
+      </div>
+    </div>
+  </div>
 </div>
 <div class="row">
   <div class="medium-4 columns white_text center_text"><i class="fi-graph-trend icon2"></i><hr> Parents can stay up-to-date on their students progress with real-time metrics
