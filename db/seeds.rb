@@ -11,14 +11,14 @@ API_URL = 'http://sandbox.api.hmhco.com/v1'
   "Content-Type"=> "application/json",
   "Accept" => "text/json",
   "Vnd-HMH-Api-Key"=> "1ae6629a8d64d165196a81c8ff43593b",
-  "Authorization"=> "SIF_HMACSHA256 ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa1pXNTBhWFI1TG1Gd2FTNW9iV2hqYnk1amIyMGlMQ0poZFdRaU9pSm9kSFJ3T2k4dmQzZDNMbWh0YUdOdkxtTnZiU0lzSW1saGRDSTZNVFF6TlRRMk1ESXdNaXdpYzNWaUlqb2lZMjVjZFRBd00yUlRZWFZ5YjI0Z1FtRnlZV1JrZFhJc2RXbGtYSFV3TUROa2MyRjFjbTl1TEhWdWFYRjFaVWxrWlc1MGFXWnBaWEpjZFRBd00yUmhZakZsTkRNMlpTMDRNVGMzTFRReE16a3RPR1V5WkMwMU1tRTJaamRoT0dKbE1qY3NaR05jZFRBd00yUXhJaXdpYUhSMGNEb3ZMM2QzZHk1cGJYTm5iRzlpWVd3dWIzSm5MMmx0YzNCMWNtd3ZiR2x6TDNZeEwzWnZZMkZpTDNCbGNuTnZiaUk2V3lKSmJuTjBjblZqZEc5eUlsMHNJbU5zYVdWdWRGOXBaQ0k2SWpWbU1qTTVaalpsTFRneE5UUXROREl3T1MwNVpEbGtMVFZrWlRFeVkyRTBPR1ZrWmk1b2JXaGpieTVqYjIwaUxDSmxlSEFpT2pFME16VTBOak00TURKOS53V0xfTXVVSzI1MlRONUNxMUMxNlQ0ZlkzY0hqX0gtQXdfTkcwcHhIM1kwOmZNa1RMaTk2MDBCMWk5YVRaT013NXhMcnZNYi9QN0lINlFkbnUzU3kzTTg9Cg=="
+  "Authorization"=> "SIF_HMACSHA256 ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa1pXNTBhWFI1TG1Gd2FTNW9iV2hqYnk1amIyMGlMQ0poZFdRaU9pSm9kSFJ3T2k4dmQzZDNMbWh0YUdOdkxtTnZiU0lzSW1saGRDSTZNVFF6TlRRNU9EZzFNeXdpYzNWaUlqb2lZMjVjZFRBd00yUlRZWFZ5YjI0Z1FtRnlZV1JrZFhJc2RXbGtYSFV3TUROa2MyRjFjbTl1TEhWdWFYRjFaVWxrWlc1MGFXWnBaWEpjZFRBd00yUmhZakZsTkRNMlpTMDRNVGMzTFRReE16a3RPR1V5WkMwMU1tRTJaamRoT0dKbE1qY3NaR05jZFRBd00yUXhJaXdpYUhSMGNEb3ZMM2QzZHk1cGJYTm5iRzlpWVd3dWIzSm5MMmx0YzNCMWNtd3ZiR2x6TDNZeEwzWnZZMkZpTDNCbGNuTnZiaUk2V3lKSmJuTjBjblZqZEc5eUlsMHNJbU5zYVdWdWRGOXBaQ0k2SWpWbU1qTTVaalpsTFRneE5UUXROREl3T1MwNVpEbGtMVFZrWlRFeVkyRTBPR1ZrWmk1b2JXaGpieTVqYjIwaUxDSmxlSEFpT2pFME16VTFPRFE0TlROOS5MWDFCeUJQX3c2dERLNWQ0WGduRHpWWHczT2NyNmZQN0ZfMHhNNVlhUDlFOjhndXg1Y1dZcStGMHVZYUgzeDQyZ3czTXBKNXFwc0o3NjhiQVBYSEZYSEU9Cg=="
 }
 
 @student_headers = {
   "Content-Type"=> "application/json",
   "Accept" => "text/json",
   "Vnd-HMH-Api-Key"=> "1ae6629a8d64d165196a81c8ff43593b",
-  "Authorization"=> "SIF_HMACSHA256 ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa1pXNTBhWFI1TG1Gd2FTNW9iV2hqYnk1amIyMGlMQ0poZFdRaU9pSm9kSFJ3T2k4dmQzZDNMbWh0YUdOdkxtTnZiU0lzSW1saGRDSTZNVFF6TlRRMU5qTTBOQ3dpYzNWaUlqb2lZMjVjZFRBd00yUlRiV1ZoWjI5c0lFZHZibVVzZFdsa1hIVXdNRE5rWjI5c2JIVnRMSFZ1YVhGMVpVbGtaVzUwYVdacFpYSmNkVEF3TTJSa1lUQXlPVEUxTnkxbFptRm1MVFExTnpndFlqZGpaUzB4WkRjME9ERTNOamN6WVRrc1pHTmNkVEF3TTJRM05EYzNJaXdpYUhSMGNEb3ZMM2QzZHk1cGJYTm5iRzlpWVd3dWIzSm5MMmx0YzNCMWNtd3ZiR2x6TDNZeEwzWnZZMkZpTDNCbGNuTnZiaUk2V3lKTVpXRnlibVZ5SWwwc0ltTnNhV1Z1ZEY5cFpDSTZJalZtTWpNNVpqWmxMVGd4TlRRdE5ESXdPUzA1WkRsa0xUVmtaVEV5WTJFME9HVmtaaTVvYldoamJ5NWpiMjBpTENKbGVIQWlPakUwTXpVME5UazVORFI5LnpReDZ3SVZySUxlbHI5bGhrZWJvQ3A3NzdneHQzVkh5NEw1cUtTOU5fc0U6UXQ5NEpPdFN2cjQ1T2txYmkvc0MvT0UvL25IMVh6N3NWaUgwakh2bElacz0K"
+  "Authorization"=> "SIF_HMACSHA256 ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa1pXNTBhWFI1TG1Gd2FTNW9iV2hqYnk1amIyMGlMQ0poZFdRaU9pSm9kSFJ3T2k4dmQzZDNMbWh0YUdOdkxtTnZiU0lzSW1saGRDSTZNVFF6TlRRNU9ESTVNaXdpYzNWaUlqb2lZMjVjZFRBd00yUlRiV1ZoWjI5c0lFZHZibVVzZFdsa1hIVXdNRE5rWjI5c2JIVnRMSFZ1YVhGMVpVbGtaVzUwYVdacFpYSmNkVEF3TTJSa1lUQXlPVEUxTnkxbFptRm1MVFExTnpndFlqZGpaUzB4WkRjME9ERTNOamN6WVRrc1pHTmNkVEF3TTJRM05EYzNJaXdpYUhSMGNEb3ZMM2QzZHk1cGJYTm5iRzlpWVd3dWIzSm5MMmx0YzNCMWNtd3ZiR2x6TDNZeEwzWnZZMkZpTDNCbGNuTnZiaUk2V3lKTVpXRnlibVZ5SWwwc0ltTnNhV1Z1ZEY5cFpDSTZJalZtTWpNNVpqWmxMVGd4TlRRdE5ESXdPUzA1WkRsa0xUVmtaVEV5WTJFME9HVmtaaTVvYldoamJ5NWpiMjBpTENKbGVIQWlPakUwTXpVMU9EUXlPVEo5LmhHUkhFdFpBME5WdGdHa2dkdnFuZWVtVERHUjdLcXE0RTVwQnF4dHhkU1k6dzlSNFVCNVoybnZiUHVOVXZoT1BVbG90K1lvcmg2dDAwdzVESDI4NWo1cz0K"
 }
 
 def call_api(endpoint, header)
@@ -73,7 +73,6 @@ def seed_staff_sections
   end
 end
 
-# Erica was here.
 def seed_students
   json = call_api('/students', @teacher_headers)
   json.each do |element|
@@ -212,6 +211,7 @@ def seed_assignments
     assignment.staff_person_id = staff_ref_ids.sample
     assignment.available_date = element['availableDate']
     assignment.due_date = element['dueDate']
+
     if assignment.save
       puts 'Assignment!'
     else
@@ -228,9 +228,6 @@ def seed_assignment_submissions
     section = assignment.section
     section_students = section.students
 
-    ### TODO TODO TODO ###
-    ### SECTIONS_STUDENTS IS NIL ###
-
     section_students.each do |student|
       assignment_submission = AssignmentSubmission.find_or_initialize_by(student_id: student.id,
                                                                          assignment_id: assignment.id,
@@ -241,15 +238,13 @@ def seed_assignment_submissions
       assignment_submission.status = "COMPLETED"
 
       if assignment_submission.save
-        puts "F%&*ING YES!!"
+        puts "Assignment submission!"
       else
         puts assignment_submission.errors
       end
     end
   end
 end
-
-seed_assignment_submissions
 
 def seed_parents
   first_names = ['John', 'Paul', 'George', 'Oscar', 'Ashley', 'Mary', 'Kate']
@@ -284,3 +279,17 @@ def seed_users
     puts 'Teacher users!' if user.save
   end
 end
+
+def run_all_seed_methods
+  seed_students
+  seed_staff
+  seed_parents
+  seed_sections
+  seed_student_sections
+  seed_staff_sections
+  seed_assignments
+  seed_assignment_submissions
+  seed_users
+end
+
+run_all_seed_methods
