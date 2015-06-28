@@ -1,0 +1,19 @@
+<div class="row">
+  <div class="small-12 columns center_text top-text">
+      <%= @section.name %> <i class="fi-calendar"></i>
+  </div>
+  <div class="row right_text white_text">
+  <i class="fi-torsos-all icon"></i>
+  <%= link_to section_assignments_path(params[:section_id]) do %>
+  <i class="fi-page-filled icon"></i>
+  <% end %>
+</div>
+  <%- @students.each do |student| %>
+    <div class="small-12 columns top-text">
+      <div class="button expand">
+        <%= link_to student.full_name, student_path(student) %>
+      </div>
+    </div>
+  <!-- <a href="#" class="button"></a> -->
+  <%- end %>
+</div>

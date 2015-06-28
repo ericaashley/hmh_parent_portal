@@ -15,6 +15,14 @@
  *= require foundation_and_overrides
 
  */
+.white_text a {
+  color: #84A5B8;
+
+}
+
+.button a {
+  color: #FFF;
+}
 
 .password-form-labels {
   font-weight: bold;

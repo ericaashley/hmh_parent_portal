@@ -5,7 +5,10 @@
 </div>
 
 <div class="row right_text white_text">
-  <i class="fi-torsos-all icon"></i> <i class="fi-page-filled icon"></i>
+  <%= link_to section_students_path(params[:section_id]) do %>
+    <i class="fi-torsos-all icon"></i>
+  <% end %>
+  <i class="fi-page-filled icon"></i>
 </div>
 <div class="row">
   <div class="panel">

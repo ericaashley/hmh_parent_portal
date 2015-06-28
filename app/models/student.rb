@@ -8,4 +8,8 @@ class Student < ActiveRecord::Base
   validates :ref_id, presence: true
   validates :given_name, presence: true
   validates :family_name, presence: true
+
+  def full_name
+  	given_name + " " + family_name
+  end
 end

@@ -51,7 +51,9 @@ def seed_sections
     params["status"] = element["status"]
     params["school_year"] = element["schoolYear"]
     params["ref_id"] = element["refId"]
-    params["name"] = element["name"]
+    periods = ["1st", "2nd", "3rd", "4th", "5th", "6th"]
+    classes = ["Geometry", "Algebra", "Calculus"]
+    params["name"] = periods.sample + " period " + classes.sample
     section = Section.create(params)
     puts "Hallejah!!" if section.save
   end
