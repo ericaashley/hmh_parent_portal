@@ -14,7 +14,7 @@
     <%- section.assignments.each do |assignment| %>
       <div class="small-12 columns top-text">
         <div class="button expand">
-          <%= assignment.name %>, Status: <%= assignment.assignment_submissions.find_by(student_id: @student.id).status %>, Score: <%= assignment.assignment_submissions.find_by(student_id: @student.id).score %>
+          <%= link_to assignment.name, assignment_submission_path(assignment.assignment_submissions.find_by(student_id: @student.id).id) %>, Status: <%= assignment.assignment_submissions.find_by(student_id: @student.id).status %>, Score: <%= assignment.assignment_submissions.find_by(student_id: @student.id).score %>
         </div>
       </div> 
     <!-- <a href="#" class="button"></a> -->
