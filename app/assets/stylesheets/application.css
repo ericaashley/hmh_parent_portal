@@ -15,7 +15,9 @@
  *= require foundation_and_overrides
 
  */
-
+.button a {
+  color: #FFF;
+}
 .top-bar .name h1 a {
   color: #2A7CA8;
   font-family: "Georgia", serif;

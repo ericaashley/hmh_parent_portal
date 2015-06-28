@@ -2,11 +2,10 @@
   <div class="small-12 columns center_text top-text">
       <%= Time.now.strftime("%B %d") %> <i class="fi-calendar"></i>
   </div>
-  <% @sessions = [{title: "this class"}, {title: "this other class"}]%>
-  <%- @sessions.each do |session| %>
+  <%- @sections.each do |section| %>
     <div class="small-12 columns top-text">
       <div class="button expand">
-        <%= session %>
+        <%= link_to section.name, section_students_path(section) %>
       </div>
     </div>
   <!-- <a href="#" class="button"></a> -->
