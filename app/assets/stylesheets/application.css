@@ -17,6 +17,10 @@
  */
 .white_text a {
   color: #84A5B8;
+}
+.main_button h2{
+  padding-top: 70px;
+  color: #085680;
 
 }
 
@@ -91,6 +95,7 @@ body {
   background-image: url(images/radial_bg.png);
   background-position: center center;
   background-repeat: no-repeat;
+  font-family: 'Oxygen', sans-serif;
 
   /* Safari 4-5, Chrome 1-9 */
   /* Can't specify a percentage size? Laaaaaame. */
@@ -114,4 +119,9 @@ body {
   background-size: cover;
   background-position: top;
 }
-
+.footer i {
+  font-size: 45px;
+}
+.footer ul {
+  padding-top: 15px;
+}
