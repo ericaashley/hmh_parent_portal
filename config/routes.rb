@@ -1,7 +1,7 @@
 Rails.application.routes.draw do
-  root 'assignments#index'
+  root 'homes#landing'
   devise_for :users
-  
+
   resources :sections, only: [:index] do
     resources :students, only: [:show]
   end
