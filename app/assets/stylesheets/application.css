@@ -15,8 +15,19 @@
  *= require foundation_and_overrides
 
  */
+.white_text a {
+  color: #84A5B8;
+
+}
+
 .button a {
   color: #FFF;
+}
+
+.password-form-labels {
+  font-weight: bold;
+  font-size: 20px;
+  vertical-align: text-top;
 }
 .top-bar .name h1 a {
   color: #2A7CA8;
