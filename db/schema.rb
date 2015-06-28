@@ -84,7 +84,6 @@ ActiveRecord::Schema.define(version: 20150627220406) do
   end
 
   create_table "students", force: :cascade do |t|
-    t.string  "user_name",     null: false
     t.string  "ref_id",        null: false
     t.string  "id_value",      null: false
     t.string  "given_name",    null: false
@@ -105,6 +104,7 @@ ActiveRecord::Schema.define(version: 20150627220406) do
     t.datetime "last_sign_in_at"
     t.inet     "current_sign_in_ip"
     t.inet     "last_sign_in_ip"
+    t.string   "role",                                null: false
     t.datetime "created_at",                          null: false
     t.datetime "updated_at",                          null: false
   end
