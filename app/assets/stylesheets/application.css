@@ -15,3 +15,46 @@
  *= require foundation_and_overrides
 
  */
+
+.top-bar {
+    opacity: 0.3;
+}
+.name h1 a {
+  color: white;
+  font-family: "Georgia", serif;
+  font-size: 35px;
+}
+.top-text{
+  color: #A1BCCC;
+  font-size: 35px;
+  text-align: center;
+}
+.right_text {
+  text-align: right;
+}
+body {
+    /*background-color: #275B78;*/
+    /*background: linear-gradient(to bottom right, #397996 , #235673);*/
+
+  /* fallback */
+  background-color: #2F2727;
+  background-image: url(images/radial_bg.png);
+  background-position: center center;
+  background-repeat: no-repeat;
+
+  /* Safari 4-5, Chrome 1-9 */
+  /* Can't specify a percentage size? Laaaaaame. */
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#397996), to(#235673));
+
+  /* Safari 5.1+, Chrome 10+ */
+  background: -webkit-radial-gradient(circle, #397996, #235673);
+
+  /* Firefox 3.6+ */
+  background: -moz-radial-gradient(circle, #397996, #235673);
+
+  /* IE 10 */
+  background: -ms-radial-gradient(circle, #397996, #235673);
+
+  /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}
+
