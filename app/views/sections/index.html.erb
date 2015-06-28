@@ -5,7 +5,11 @@
   <%- @sections.each do |section| %>
     <div class="small-12 columns top-text">
       <div class="button expand">
-        <%= link_to section.name, section_students_path(section) %>
+        <% if current_user.role == "Teacher" %>
+          <%= link_to section.name, section_students_path(section) %>
+        <% else %>
+          <%= link_to section.name, student_path(@student) %>
+        <% end %>
       </div>
     </div>
   <!-- <a href="#" class="button"></a> -->
