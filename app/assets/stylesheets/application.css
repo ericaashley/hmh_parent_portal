@@ -16,21 +16,49 @@
 
  */
 
-.top-bar {
-    opacity: 0.3;
-}
-.name h1 a {
-  color: white;
+.top-bar .name h1 a {
+  color: #2A7CA8;
   font-family: "Georgia", serif;
   font-size: 35px;
+}
+
+.name span a {
+  color: #2A7CA8;
+}
+.icon2 {
+  color: white;
+  font-size: 120px;
+  text-align: center;
 }
 .top-text{
   color: #A1BCCC;
   font-size: 35px;
+}
+.center_text{
   text-align: center;
+}
+.white_text {
+  color: white;
+  font-size: 25px;
 }
 .right_text {
   text-align: right;
+}
+.padded_column {
+  padding:5px;
+}
+.blue_box {
+  background-color: #00BADF;
+}
+.green_box {
+  background-color: #00C569;
+  padding-left: 20px;
+}
+.column_content {
+  padding-top: 7px;
+  padding-bottom: 7px;
+  padding-left: 10px;
+  font-family: 'Oxygen', sans-serif;
 }
 body {
     /*background-color: #275B78;*/
@@ -44,17 +72,25 @@ body {
 
   /* Safari 4-5, Chrome 1-9 */
   /* Can't specify a percentage size? Laaaaaame. */
-  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#397996), to(#235673));
+  background: -webkit-gradient(radial, center center, 0, center center, 460, from(#6DB0D4), to(#2A7CA8));
 
   /* Safari 5.1+, Chrome 10+ */
-  background: -webkit-radial-gradient(circle, #397996, #235673);
+  background: -webkit-radial-gradient(circle, #6DB0D4, #2A7CA8);
 
   /* Firefox 3.6+ */
-  background: -moz-radial-gradient(circle, #397996, #235673);
+  background: -moz-radial-gradient(circle, #6DB0D4, #2A7CA8);
 
   /* IE 10 */
-  background: -ms-radial-gradient(circle, #397996, #235673);
+  background: -ms-radial-gradient(circle, #6DB0D4, #2A7CA8);
 
   /* Opera couldn't do radial gradients, then at some point they started supporting the -webkit- syntax, how it kinda does but it's kinda broken (doesn't do sizing) */
+}
+.landing_page{
+  height: 60%;
+  padding-bottom: 100px;
+  background-image: url("student.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: top;
 }
 

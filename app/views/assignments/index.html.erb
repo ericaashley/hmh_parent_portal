@@ -1,18 +1,22 @@
 <div class="small-12 columns center_text top-text">
   <%= "CHANGE THIS TO THE CLASS NAME" %>
   <!-- <a href="#" class="button"></a> -->
-  <div class="row right_text">
-    <i class="fi-torsos-all"></i> <i class="fi-page-filled"></i>
-  </div>
+</div>
+<div class="row right_text white_text">
+  <i class="fi-torsos-all icon"></i> <i class="fi-page-filled icon"></i>
+</div>
 
-  <%- @assignments.each do |assignment| %>
-    <div class="row">
-      <div class="small-3 columns blue_box">
-        <%= assignment.date %>
-      </div>
-      <div class="small-9 columns green_box">
-        <%= assignment.title %>
+<div class="row">
+  <div class="small-12 columns">
+    <div class="small-3 columns white_text padded_column">
+      <div class="blue_box column_content">
+        06/28/2015
       </div>
     </div>
-  <%- end %>
+    <div class="small-9 columns padded_column white_text">
+      <div class="green_box column_content">
+        This assignment
+      </div>
+    </div>
+  </div>
 </div>
