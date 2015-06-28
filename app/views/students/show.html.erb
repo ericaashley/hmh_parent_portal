@@ -1,0 +1,24 @@
+<div class="row">
+  <div class="small-12 columns center_text top-text">
+      <%= @student.full_name %> <i class="fi-calendar"></i>
+  </div>
+
+  <%- @student_sections.each do |section| %>
+  <% if section.assignments.count > 0  %>
+  <div class="small-12 columns top-text">
+        <div class="button expand">
+    <%= section.name.upcase %>
+        </div>
+      </div>
+  <% end %>
+    <%- section.assignments.each do |assignment| %>
+      <div class="small-12 columns top-text">
+        <div class="button expand">
+          <%= assignment.name %>, Status: <%= assignment.assignment_submissions.find_by(student_id: @student.id).status %>, Score: <%= assignment.assignment_submissions.find_by(student_id: @student.id).score %>
+        </div>
+      </div> 
+    <!-- <a href="#" class="button"></a> -->
+    <%- end %>
+  <%- end %>
+
+</div>
