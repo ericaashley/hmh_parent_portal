@@ -15,6 +15,19 @@
  *= require foundation_and_overrides
 
  */
+
+.teacher-block {
+  background-color: #FFAC84;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom:15px;
+}
+.student-block {
+  background-color: #FFE284;
+  border-radius: 15px;
+  padding: 25px;
+  margin-bottom:15px;
+}
 .white_text a {
   color: #84A5B8;
 }
