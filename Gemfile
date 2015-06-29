@@ -52,3 +52,4 @@ gem 'foundation-rails'
 gem 'json'
 gem 'pry'
 gem 'httparty'
+gem 'dotenv-rails', :groups => [:development, :test]
