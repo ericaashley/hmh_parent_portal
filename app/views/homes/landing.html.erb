@@ -3,10 +3,10 @@
     <div class="small-5 columns">
       <div class="white_text main_button ">
        <h2> Bridging the gap between teachers and parents</h2>
-        <% if current_user.role == "teacher" %>
-          <%= button_to 'My classes', sections_path, class:"button large"%>
+        <% if current_user.role == "Teacher" %>
+          <%= button_to 'My classes', sections_path, class:"button large", method: 'get'%>
         <% else %>
-          <%= button_to 'My child', sections_path, class:"button large"%>
+          <%= button_to 'My child', sections_path, class:"button large", method: 'get'%>
         <% end %>
       </div>
     </div>

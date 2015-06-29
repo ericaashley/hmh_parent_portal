@@ -1,24 +1,20 @@
 # This file should contain all the record creation needed to seed the database with its default values.
 # The data can then be loaded with the rake db:seed (or created alongside the db with db:setup).
-#
-# Examples:
-#
-#   cities = City.create([{ name: 'Chicago' }, { name: 'Copenhagen' }])
-#   Mayor.create(name: 'Emanuel', city: cities.first)
+
 API_URL = 'http://sandbox.api.hmhco.com/v1'
 
 @teacher_headers = {
   "Content-Type"=> "application/json",
   "Accept" => "text/json",
-  "Vnd-HMH-Api-Key"=> "1ae6629a8d64d165196a81c8ff43593b",
-  "Authorization"=> "SIF_HMACSHA256 ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa1pXNTBhWFI1TG1Gd2FTNW9iV2hqYnk1amIyMGlMQ0poZFdRaU9pSm9kSFJ3T2k4dmQzZDNMbWh0YUdOdkxtTnZiU0lzSW1saGRDSTZNVFF6TlRRNU9EZzFNeXdpYzNWaUlqb2lZMjVjZFRBd00yUlRZWFZ5YjI0Z1FtRnlZV1JrZFhJc2RXbGtYSFV3TUROa2MyRjFjbTl1TEhWdWFYRjFaVWxrWlc1MGFXWnBaWEpjZFRBd00yUmhZakZsTkRNMlpTMDRNVGMzTFRReE16a3RPR1V5WkMwMU1tRTJaamRoT0dKbE1qY3NaR05jZFRBd00yUXhJaXdpYUhSMGNEb3ZMM2QzZHk1cGJYTm5iRzlpWVd3dWIzSm5MMmx0YzNCMWNtd3ZiR2x6TDNZeEwzWnZZMkZpTDNCbGNuTnZiaUk2V3lKSmJuTjBjblZqZEc5eUlsMHNJbU5zYVdWdWRGOXBaQ0k2SWpWbU1qTTVaalpsTFRneE5UUXROREl3T1MwNVpEbGtMVFZrWlRFeVkyRTBPR1ZrWmk1b2JXaGpieTVqYjIwaUxDSmxlSEFpT2pFME16VTFPRFE0TlROOS5MWDFCeUJQX3c2dERLNWQ0WGduRHpWWHczT2NyNmZQN0ZfMHhNNVlhUDlFOjhndXg1Y1dZcStGMHVZYUgzeDQyZ3czTXBKNXFwc0o3NjhiQVBYSEZYSEU9Cg=="
+  "Vnd-HMH-Api-Key"=> ENV["VND_HMH_API_KEY"],
+  "Authorization"=> ENV["TEACHER_SIF_TOKEN"]
 }
 
 @student_headers = {
   "Content-Type"=> "application/json",
   "Accept" => "text/json",
-  "Vnd-HMH-Api-Key"=> "1ae6629a8d64d165196a81c8ff43593b",
-  "Authorization"=> "SIF_HMACSHA256 ZXlKaGJHY2lPaUpJVXpJMU5pSXNJblI1Y0NJNklrcFhWQ0o5LmV5SnBjM01pT2lKb2RIUndjem92TDJsa1pXNTBhWFI1TG1Gd2FTNW9iV2hqYnk1amIyMGlMQ0poZFdRaU9pSm9kSFJ3T2k4dmQzZDNMbWh0YUdOdkxtTnZiU0lzSW1saGRDSTZNVFF6TlRRNU9ESTVNaXdpYzNWaUlqb2lZMjVjZFRBd00yUlRiV1ZoWjI5c0lFZHZibVVzZFdsa1hIVXdNRE5rWjI5c2JIVnRMSFZ1YVhGMVpVbGtaVzUwYVdacFpYSmNkVEF3TTJSa1lUQXlPVEUxTnkxbFptRm1MVFExTnpndFlqZGpaUzB4WkRjME9ERTNOamN6WVRrc1pHTmNkVEF3TTJRM05EYzNJaXdpYUhSMGNEb3ZMM2QzZHk1cGJYTm5iRzlpWVd3dWIzSm5MMmx0YzNCMWNtd3ZiR2x6TDNZeEwzWnZZMkZpTDNCbGNuTnZiaUk2V3lKTVpXRnlibVZ5SWwwc0ltTnNhV1Z1ZEY5cFpDSTZJalZtTWpNNVpqWmxMVGd4TlRRdE5ESXdPUzA1WkRsa0xUVmtaVEV5WTJFME9HVmtaaTVvYldoamJ5NWpiMjBpTENKbGVIQWlPakUwTXpVMU9EUXlPVEo5LmhHUkhFdFpBME5WdGdHa2dkdnFuZWVtVERHUjdLcXE0RTVwQnF4dHhkU1k6dzlSNFVCNVoybnZiUHVOVXZoT1BVbG90K1lvcmg2dDAwdzVESDI4NWo1cz0K"
+  "Vnd-HMH-Api-Key"=> ENV["VND_HMH_API_KEY"],
+  "Authorization"=> ENV["STUDENT_SIF_TOKEN"]
 }
 
 def call_api(endpoint, header)
